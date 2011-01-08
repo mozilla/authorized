@@ -1,0 +1,10 @@
+content   authorized                 content/
+#skin      authorized class/1.0       skin/
+#locale    authorized en-US           locale/en-US/
+
+overlay	chrome://browser/content/browser.xul   chrome://authorized/content/overlay.xul
+overlay	chrome://messenger/content/messenger.xul   chrome://authorized/content/overlay.xul
+resource authorized ./
+
+component {739c2b21-ae58-2a4b-b3c5-7a80b7d74ff9} components/about.js
+contract @mozilla.org/network/protocol/about;1?what=oauth {739c2b21-ae58-2a4b-b3c5-7a80b7d74ff9}
